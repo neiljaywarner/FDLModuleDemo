@@ -21,7 +21,7 @@ object DummyContent {
      */
     val ITEM_MAP: MutableMap<String, DummyItem> = HashMap()
 
-    private val COUNT = 25
+    private val COUNT = 4
 
     init {
         // Add some sample items.
@@ -36,12 +36,12 @@ object DummyContent {
     }
 
     private fun createDummyItem(position: Int): DummyItem {
-        return DummyItem(position.toString(), "Item " + position, makeDetails(position))
+        return DummyItem(position.toString(), "Module " + position, makeDetails(position))
     }
 
     private fun makeDetails(position: Int): String {
         val builder = StringBuilder()
-        builder.append("Details about Item: ").append(position)
+        builder.append("Details about Module: ").append(position)
         for (i in 0..position - 1) {
             builder.append("\nMore details information here.")
         }
