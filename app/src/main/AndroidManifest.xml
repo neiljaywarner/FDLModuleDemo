@@ -27,6 +27,17 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.neiljaywarner.fdlopenmoduletest.ModuleListActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="neildemo.000webhostapp.com"
+                    android:scheme="https"/>
+            </intent-filter>
+
         </activity>
     </application>
 
